@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "f0248754-4ba1-4591-9b0d-878141b29086",
+		"name": "AspNetAngular",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetValues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50581/api/values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDepartments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50581/api/Department",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"Department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Department",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DepartmentName\":\"BPO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50581/api/Department",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"Department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Department",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DepartmentId\": 3,\r\n    \"DepartmentName\":\"HR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50581/api/Department",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"Department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Department",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DepartmentId\": 3,\r\n    \"DepartmentName\":\"HR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50581/api/Department/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"Department",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50581/api/Employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeName\":\"Seba\", \r\n    \"Department\": 1,\r\n    \"DateOfJoining\": \"2013-06-01\",\r\n    \"PhotoFileName\": \"img/empSeba.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50581/api/Employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeId\":2, \r\n    \"EmployeeName\":\"Sebas\", \r\n    \"Department\": 1,\r\n    \"DateOfJoining\": \"2013-06-01\",\r\n    \"PhotoFileName\": \"img/empSeba.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50581/api/Employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeId\": 3,\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50581/api/Employee/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"Employee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllDepartment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50581/api/Employee/GetAllDepartmentNames",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"Employee",
+						"GetAllDepartmentNames"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/C:/Users/SGZ/Pictures/Saved Pictures/index.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:50581/api/Employee/SaveFile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50581",
+					"path": [
+						"api",
+						"Employee",
+						"SaveFile"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
